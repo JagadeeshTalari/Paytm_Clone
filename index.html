@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9de1acd69f.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
         theme: {
@@ -14,7 +15,7 @@
             },
 
             screens: {
-            'sm': '570px',
+            'sm': '600px',
             // => @media (min-width: 640px) { ... }
 
             'md': '768px',
@@ -36,102 +37,299 @@
     </script>
     <title>PaytmClone</title>
 </head>
-<body class="bg-gray-100">
 
-   <nav class="bg-white shadow-lg shadow-gray-200 flex flex-row justify-between items-center px-24 py-5 items-center gap-5">
-        <div><img class="w-32 lg:w-48" src="./my_paytm_asset_collection/paytm_logo.png" alt=""></div>
-        <div class="hidden lg:flex flex-row text-xs justify-between align-middle space-x-2 xl:space-x-6 ">
-            <a class="font-semibold hover:bg-zinc-100 rounded py-4 px-2 text-[20px]" href="#">Paytm for Consumer</a>
-            <a class="font-semibold hover:bg-zinc-100 rounded py-4 px-2 text-[20px]" href="#">Paytm For Business</a>
-            <a class="font-semibold hover:bg-zinc-100 rounded py-4 px-2 text-[20px]" href="#">Investor Relations</a>
-            <a class="font-semibold hover:bg-zinc-100 rounded py-4 px-2 text-[20px]" href="#">Company</a>
-            <a class="font-semibold hover:bg-zinc-100 rounded py-4 px-2 text-[20px]" href="#">Career</a>
+<body class="bg-[#F6F6F6]">
+
+   <nav class="w-screen bg-white drop-shadow-sm px-3  fixed z-10 flex flex-row justify-between items-center
+                sm:py-1.5
+                md:py-2.5 drop-shadow
+                lg:py-3
+                xl:py-3.5 drop-shadow-sm
+                2xl:px-24 2xl:py-5 2xl:shadow-xl 2xl:shadow-gray-200/20">
+
+        <!-- Nav-bar hamburger icon -->
+        <div class="text-[15px] sm:hidden">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="flex flex-row justify-around items-center font-bold text-white bg-sky-400 hover:bg-blue-900 rounded-full">
-        <p class="px-4 ml-2 py-2 text-base">Sign In</p>  
-        <img class="w-[35px]"src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg" alt="">
+
+        <!-- Nav-bar logo -->
+        <div>
+            <img class="w-32 md:w-36 lg:w-40 xl:w-44 2xl:w-48" src="./my_paytm_asset_collection/paytm_logo.png" alt="">
         </div>
+
+        <!-- Nav-bar list items -->
+        <div class="hidden 
+                    sm:flex flex-row 
+                    2xl:flex flex-row text-xs justify-between align-middle space-x-2 xl:space-x-6 ">
+
+            <a class="hover:bg-zinc-100 rounded 
+                        sm:font-medium sm:px-0.5 sm:py-0 sm:text-[10px] 
+                        md:text-[13px] md:px-2 md:py-1
+                        lg:text-[14px] md:px-2.5 md:py-1.5
+                        xl:text-[16px] md:px-3 md:py-2.5
+                        2xl:font-semibold 2xl:py-4 2xl:px-2 2xl:text-[20px]" 
+
+                        href="#">Paytm for Consumer
+            </a>
+
+            <a class="hover:bg-zinc-100 rounded 
+                        sm:font-medium sm:px-0.5 sm:py-0 sm:text-[10px] 
+                        md:text-[13px] md:px-2 md:py-1
+                        lg:text-[14px] md:px-2.5 md:py-1.5
+                        xl:text-[16px] md:px-3 md:py-2.5
+                        2xl:font-semibold 2xl:py-4 2xl:px-2 2xl:text-[20px]" 
+            
+                        href="#">Paytm For Business
+            </a>
+
+            <a class="hover:bg-zinc-100 rounded 
+                        sm:font-medium sm:px-0.5 sm:py-0 sm:text-[10px] 
+                        md:text-[13px] md:px-2 md:py-1
+                        lg:text-[14px] md:px-2.5 md:py-1.5
+                        xl:text-[16px] md:px-3 md:py-2.5
+                        2xl:font-semibold 2xl:py-4 2xl:px-2 2xl:text-[20px]" 
+                        
+                        href="#">Investor Relations
+            </a>
+
+            <a class="hover:bg-zinc-100 
+                        sm:font-medium sm:px-0.5 sm:py-0 sm:text-[10px] 
+                        md:text-[13px] md:px-2 md:py-1
+                        lg:text-[14px] md:px-2.5 md:py-1.5
+                        xl:text-[16px] md:px-3 md:py-2.5
+                        2xl:font-semibold rounded 2xl:py-4 2xl:px-2 2xl:text-[20px]" 
+                        
+                        href="#">Company
+            </a>
+
+            <a class="hover:bg-zinc-100 rounded 
+                        sm:font-medium sm:px-0.5 sm:py-0 sm:text-[10px] 
+                        md:text-[13px] md:px-2 md:py-1
+                        lg:text-[14px] md:px-2.5 md:py-1.5
+                        xl:text-[16px] md:px-3 md:py-2.5
+                        2xl:font-semibold 2xl:py-4 2xl:px-2 2xl:text-[20px]" 
+                        
+                        href="#">Career
+            </a>
+
+        </div>
+
+        <!-- Nav-bar signIn button -->
+        <div class="flex flex-row justify-end items-center font-semibold gap-x-0.5 w-[2.5rem] py-px bg-sky-400 hover:bg-blue-900 rounded-full text-white   
+                    sm:w-[3rem] py-0.5  gap-x-1
+                    md:w-[4rem] gap-x-1.5 
+                    lg:w-[5rem] gap-x-2 py-[1.5px]
+                    xl:w-[100px] py-[1.75px]
+                    2xl:w-[7rem] 2xl:font-bold ">
+
+            <p class="  text-[6px] 
+                        sm:text-[8px]
+                        md:text-[0.6rem]
+                        lg:text-[0.8rem]
+                        xl:text-[0.9rem]
+                        2xl:text-base">
+                
+                        Sign In
+
+            </p>  
+            
+            <img class="w-[10px] sm:w-[13px] md:w-[17px] lg:w-[21px] xl:w-[32px] 2xl:w-[35px]"src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg" alt="">
+
+        </div>
+        
+        
    </nav>
 
    <section id="kyc">
-    <div>
-        <p class="text-sm font-medium text-center pt-3 pb-3 lg:text-base">
-            <span class="text-zinc-900 font-bold">No Wallet KYC Required</span> 
-            <span class="text-[28px]">😊</span> 
-            to pay using UPI on Paytm.
-           <span class="text-zinc-900 font-bold">Learn more.</span> 
+
+        <div>
+
+            <p class="  text-[9px]
+                        sm:text-sm font-medium text-center pt-3 pb-3 lg:text-base">
+                <span class="text-[9px] text-zinc-900 font-bold">No Wallet KYC Required</span> 
+                <span class="text-[10px] sm:text-[28px]">😊</span> 
+                to pay using UPI on Paytm.
+                 <span class="text-zinc-900 font-bold">Learn more.</span> 
             </p>
-    </div>
+
+        </div>
+
    </section>
 
    <section id="content">
     <!-- Main Content - India's Most Loved Payment's App Section-1 -->
-    <div class="bg-neutral-50 flex flex-row justify-between gap-56 pt-24 pb-20">
+    <div class="hidden lg:flex-row lg:gap-56 lg:pt-24 lg:pb-20
+                
+                
+                w-screen h-max flex flex-col-reverse justify-between bg-neutral-50">
+
         <!-- left section -->
-        <div class=" flex flex-col w-[580px] space-y-12 my-auto ml-32 items-center sm:items-start ">
-            <div class=""><img class="w-[75px] drop-shadow" src="./my_paytm_asset_collection/paytm_upi_img_content.png" alt=""></div>
-            <div class="space-y-4">
-                <h1 class="font-bold text-6xl leading-tight">India's Most-loved Payments App</h1>
-                <p class="text-[24px] font-semibold w-[550px]">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+        <div class="lg:w-[580px] lg:space-y-12 lg:my-auto lg:ml-32 lg:items-center sm:items-start 
+                    
+        
+                    w-screen flex flex-col">
+
+            <div class="">
+                <img class="w-[4rem] lg:w-[75px] drop-shadow" src="./my_paytm_asset_collection/paytm_upi_img_content.png" alt="">
             </div>
+
+            <div class="space-y-4 w-full">
+
+                <h1 class=" font-bold text-6xl leading-tight
+                            font-semibold text-2xl">
+
+                        India's Most-loved Payments App
+                </h1>
+
+                <p class="  lg:text-[24px] lg:font-semibold lg:w-[550px]
+                            w-screen text-[1rem] ">
+
+                        Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+
+            </div>
+
             <div class="flex flex-row font-semibold space-x-4 items-center bg-black rounded-full text-white py-3 px-6 hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black hover:">
                 <p>Download Paytm App</p>
                 <svg class="fill-white hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white"></path></svg>
                 <svg class="fill-white hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white"></path></svg>
             </div>
+
         </div>
         <!-- right section -->
-        <div class=" w-1/3 flex flex-row justify-end"><img class="w-4/5" src="./my_paytm_asset_collection/mobilepics.png" alt=""></div>
+        <div class="lg:w-1/3 flex flex-row justify-end
+                    w-[10rem] mx-auto">
+            <img class="w-[10rem]" src="./my_paytm_asset_collection/mobilepics.png" alt="">
+        </div>
+
     </div>
     <!-- Bill Section - 2-1 -->
-    <div class="bills bg-[#00BAF2] w-screen h-[380px] flex flex-col justify-evenly">
+    <div class="hidden bills bg-[#00BAF2] w-screen lg:h-[380px] flex flex-col justify-evenly">
 
-        <div class="rechargeBills w-[1250px] mx-auto text-white max-w-max h-auto flex flex-col  gap-5">
+        <div class="rechargeBills lg:w-[1250px] mx-auto text-white lg:max-w-max h-auto flex flex-col  lg:gap-5
+        container mx-auto">
 
-            <div><h1 class="text-[37px] font-bold">Recharge & Pay Bills on Paytm.</h1></div>
+            <div><h1 class="lg:text-[37px] font-bold">Recharge & Pay Bills on Paytm.</h1></div>
 
-            <div class="flex flex-row gap-9">
+            <div class="lg:flex-row lg:gap-9
+            container mx-auto grid grid-cols-4 gap-4 space-x-3">
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/mobileRecharge.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Recharge</h2>
-                    <p class="text-[16px] font-bold leading-[22px]">Prepaid <br> Mobile  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4
+                                w-10" 
+                    src="./my_paytm_asset_collection/mobileRecharge.png" alt="mobileRecharge">
+
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">Mobile <br>
+                        Recharge 
+                    </h6>
+
+                    <h2 class="lg:text-[18px] lg:font-[500]
+                                hidden">Recharge
+                    </h2>
+
+                    <p class="lg:text-[16px] lg:font-bold lg:leading-[22px]             hidden">
+                        Prepaid <br> Mobile  >
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/HouseRent.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Pay</h2>
-                    <p class="text-[16px] font-bold">Rent <br> Payment  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                            flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4
+                                w-10" 
+                    src="./my_paytm_asset_collection/HouseRent.png" alt="mobileRecharge">
+
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">Pay <br>
+                        Rent 
+                    </h6>
+
+                    <h2 class="lg:text-[18px] lg:font-[500] hidden">Pay</h2>
+
+                    <p class="lg:text-[16px] lg:font-bold hidden">Rent <br> Payment  ></p>
+
                 </div>
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/PayElectricity.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Pay</h2>
-                    <p class="text-[16px] font-bold">Electricity <br> Bill  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                            flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4
+                                w-10"
+                                 src="./my_paytm_asset_collection/PayElectricity.png" alt="mobileRecharge">
+
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">Electricity <br>
+                        Bill 
+                    </h6>
+
+                    <h2 class="lg:text-[18px] lg:font-[500] hidden">Pay</h2>
+
+                    <p class="lg:text-[16px] lg:font-bold hidden">Electricity <br> Bill  ></p>
                 </div>
                 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/payDTH.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Recharge</h2>
-                    <p class="text-[16px] font-bold">DTH <br> Connection  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4 w-10"
+                     src="./my_paytm_asset_collection/payDTH.png" alt="mobileRecharge">
+                    
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">DTH <br>
+                        Recharge 
+                    </h6>
+
+                    <h2 class="text-[18px] font-[500] hidden">Recharge</h2>
+
+                    <p class="text-[16px] font-bold hidden">DTH <br> Connection  ></p>
+
                 </div>
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/BookGas.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Book</h2>
-                    <p class="text-[16px] font-bold">Gas <br> Cylinder  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4 w-10"
+                     src="./my_paytm_asset_collection/BookGas.png" alt="mobileRecharge">
+                    
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">Book Gas<br>
+                        Cylinder 
+                    </h6>
+
+                    <h2 class="text-[18px] font-[500] hidden">Book</h2>
+
+                    <p class="text-[16px] font-bold hidden">Gas <br> Cylinder  ></p>
+
                 </div>
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/PayCreditBill.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">Pay</h2>
-                    <p class="text-[16px] font-bold">Credit <br> Card Bill  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4 w-10"
+                     src="./my_paytm_asset_collection/PayCreditBill.png" alt="mobileRecharge">
+                    
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">Credit Card<br>
+                        Payment 
+                    </h6>
+
+                    <h2 class="text-[18px] font-[500] hidden">Pay</h2>
+
+                    <p class="text-[16px] font-bold hidden">Credit <br> Card Bill  ></p>
+
                 </div>
 
-                <div class="hover:bg-cyan-600/30 flex flex-col justify-evenly content-start pl-4 py-4 h-[185px] w-[190px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/allPaymentServices.png" alt="mobileRecharge">
-                    <h2 class="text-[18px] font-[500]">All</h2>
-                    <p class="text-[16px] font-bold">Payment <br> Services  ></p>
+                <div class="hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                flex flex-col justify-center items-center gap-2">
+
+                    <img class="lg:w-16 lg:mb-4 w-10"
+                     src="./my_paytm_asset_collection/allPaymentServices.png" alt="mobileRecharge">
+                    
+                    <h6 class="text-[12px] text-center leading-[14px] lg:hidden">All Payment <br>
+                        Services 
+                    </h6>
+
+                    <h2 class="text-[18px] font-[500] hidden">All</h2>
+
+                    <p class="text-[16px] font-bold hidden">Payment <br> Services  ></p>
+
                 </div>
 
             </div>
@@ -141,53 +339,112 @@
     </div>
 
     <!-- Bill Section - 2-2 -->
-    <div class="bills bg-[#0f4a8a] w-screen h-[380px] flex flex-col justify-evenly">
-        <div class="rechargeBills  w-[1250px] mx-auto text-white h-auto flex flex-col  gap-5">
+    <div class="hidden bills bg-[#0f4a8a] w-screen h-[380px] flex flex-col justify-evenly">
+
+        <div class="rechargeBills  lg:w-[1250px] mx-auto text-white h-auto flex flex-col  lg:gap-5">
+
             <div><h1 class="text-[37px] font-bold">Book & Buy on Paytm.</h1></div>
 
-            <div class="flex flex-row gap-9">
+            <div class="lg:flex lg:flex-row lg:gap-9
+            grid grid-cols-4 gap-4 space-x-3">
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/movieTickets.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Movie <br> Tickets  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/movieTickets.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Movie <br> Tickets  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/flightTickets.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Flight <br> Tickets  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/flightTickets.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Flight <br> Tickets  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/busTickets.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Bus <br> Tickets  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/busTickets.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Bus <br> Tickets  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/trainTickets.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Train <br> Tickets  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/trainTickets.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Train <br> Tickets  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/buyInsurance.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Buy <br> Insurance  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/buyInsurance.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Buy <br> Insurance  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/internationalFlights.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">International <br> Flights  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/internationalFlights.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              International <br> Flights  <span class="lg:display hidden"> > </span>
+                    </p>
                 </div>
                 
-                <div class="hover:bg-[#002970]/40 flex flex-col justify-evenly content-start pl-4 py-4 h-[172px] w-[200px] rounded-xl">
-                    <img class="w-16 mb-4" src="./my_paytm_asset_collection/investInStocks.png" alt="mobileRecharge">
-                    <p class="text-lg font-bold leading-5">Invest <br> in Stocks  ></p>
+                <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
+                flex flex-col justify-center items-center gap-2 text-center">
+
+                    <img class="lg:w-16 lg:mb-4 w-10" 
+                    src="./my_paytm_asset_collection/investInStocks.png" alt="mobileRecharge">
+
+                    <p class="lg:text-lg lg:font-bold lg:leading-5
+                              text-[12px] leading-[13px]">
+                              Invest <br> in Stocks  <span class="lg:display hidden"> > </span>
+                    </p>
+
                 </div>
 
             </div>
+
         </div>
     </div> 
 
     <!--  Paytm Payments Instruments Section-3-->
-    <div class="PaytmPayments section-3 flex flex-col justify-around gap-12 mx-auto my-24 w-[1170px]">   
+    <div class="hidden PaytmPayments section-3 flex flex-col justify-around gap-12 mx-auto my-24 w-[1170px]">   
 
         <div><h1 class="text-[42px] font-bold">Paytm Payments Instruments.</h1></div>
 
@@ -306,7 +563,7 @@
     </div>
 
     <!-- Financial Services by Paytm Section-4-1 -->
-    <div class="bg-white w-screen h-[790px] mx-auto flex flex-col justify-center">
+    <div class="hidden bg-white w-screen h-[790px] mx-auto flex flex-col justify-center">
 
         <div class="w-[1170px] flex flex-col mx-auto justify-center">
 
@@ -336,7 +593,7 @@
          </div>
     </div>
     <!-- Financial Services by Paytm Section-4-2 -->
-    <div class="bg-cover bg-no-repeat bg-[url('./my_paytm_asset_collection/paytmMoneyBgImage.png')] w-screen h-[640px]  flex">
+    <div class="hidden bg-cover bg-no-repeat bg-[url('./my_paytm_asset_collection/paytmMoneyBgImage.png')] w-screen h-[640px]  flex">
         
         <div class="w-[1170px] flex flex-col mx-auto justify-center">
 
@@ -366,7 +623,7 @@
 
     </div>
     <!-- Financial Services by Paytm Section-4-3 -->
-    <div class="bg-white w-screen h-[600px] mx-auto flex flex-col justify-center">
+    <div class="hidden bg-white w-screen h-[600px] mx-auto flex flex-col justify-center">
 
         <div class="w-[1170px] flex flex-col mx-auto justify-center">
 
@@ -394,7 +651,7 @@
          </div>
     </div>
     <!-- Financial Services by Paytm Section-4-4 -->
-    <div class="w-screen h-[640px]  flex">
+    <div class="hidden w-screen h-[640px]  flex">
         
         <div class="w-[1170px] flex flex-col mx-auto justify-center">
 
@@ -425,9 +682,9 @@
     </div>
 
     <!-- Business by Paytm Section -->
-    <section aria-label="BusinessByPaytm">
+    <section aria-label="hidden BusinessByPaytm">
         <div class="container bg-white w-screen">
-            <div class="w-[1150px] mx-auto flex flex-col py-28 gap-44">
+            <div class="hidden w-[1150px] mx-auto flex flex-col py-28 gap-44">
             <!-- Business Services by Paytm Section 5-1 -->
                 <div class="flex flex-col gap-12">
                     <h1 class="text-[50px] leading-[45px] font-bold">Business Services by Paytm</h1>
@@ -611,7 +868,7 @@
 
    <!-- footer section -->
 
-   <footer class="bg-[#F5F7FA]">
+   <footer class="hidden bg-[#F5F7FA]">
 
         <div class="w-[1250px] mx-auto flex flex-col py-24 space-y-12">
 
@@ -752,7 +1009,7 @@
    </footer>
 
    <!-- footer decoration  -->
-   <div class="mt-16 pb-0">
+   <div class="hidden mt-16 pb-0">
         <div class="h-3 w-scren bg-[#00BAF2]"></div>
         <div class="h-3 w-scren bg-[#002970]"></div>
    </div>
