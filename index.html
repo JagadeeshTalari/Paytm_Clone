@@ -1260,7 +1260,7 @@
 
                 <div class="bg-white w-screen">
 
-                    <div class="w-[90vw] py-28 gap-y-44 mx-auto flex flex-col 
+                    <div class="w-[90vw] py-20 2xl:py-28 gap-y-20 2xl:gap-y-44 mx-auto flex flex-col 
                                 3xl:w-[1150px]">
 
                         <!-- Business Services by Paytm Section 5-1 -->
@@ -1418,7 +1418,7 @@
                         </div>
 
                         <!-- Business Tools by Paytm Section 5-2 -->
-                        <div class="2xl:w-[1150px] h-max mx-auto flex flex-col gap-24">
+                        <div class="2xl:w-[1150px] h-max mx-auto flex flex-col gap-8 2xl:gap-24">
 
                             <h1 class="text-[20px] font-bold leading-6
                                         md:text-[22px] md:leading-7 md:mx-0
@@ -1547,64 +1547,85 @@
                         </div>
 
                         <!-- Paytm Money & Travel Cards Section 5-3 -->
-                        <div class="hidden w-[1150px] ml-0 h-max flex flex-col gap-36 my-12 overflow-hidden">
+                        <div class="flex flex-col overflow-hidden mx-auto md:gap-24
+                                    2xl:w-[1150px] 2xl:mx-auto 2xl:h-max 2xl:gap-36 2xl:my-12 ">
+                           
                             <!-- Paytm  Money Section 5-3-1-->
-                            <div class="flex flex-row gap-8">
+                            <div class="flex flex-col gap-y-8
+                                        xl:flex xl:flex-row xl:gap-8">
 
-                                <div class="flex flex-col justify-between w-[200px] h-[220px]">
+                                <!-- Description -->
+                                <div class="flex flex-col gap-y-4 justify-between 2xl:w-[200px] 2xl:h-[220px]">
+                                    
+                                    <!-- icon - paytm money -->
                                     <div>
-                                    <img class="w-36" src="./my_paytm_asset_collection/PaytmMoney.png" alt="">
+                                        <img class="w-36" src="./my_paytm_asset_collection/PaytmMoney.png" alt="">
                                     </div>
-                                    <div>
-                                    <p class="leading-5">
-                                        Get started on wealth creation journey with Zero brokerage fee & no hidden charges.
-                                    </p>
+                                    
+                                    <!-- Description content -->
+                                    <div class="flex flex-col justify-between">
+                                        <p class="leading-5">
+                                            Get started on wealth creation journey with Zero brokerage fee & no hidden charges.
+                                        </p>
 
-                                    <div class="pt-3 text-sky-500 font-semibold">Learn More</div>
-                                </div>
+                                        <div class="self-end md:self-start pt-3 text-sky-500 font-semibold">Learn More</div>
+                                    </div>
+
                                 </div> 
 
-                                <div class="flex flex-row gap-8">
+                                <!-- mini-cards section -->
+                                <div class="grid grid-cols-6 gap-x-2 gap-y-6 drop-shadow-lg
+                                            md:gap-x-10 xl:flex xl:flex-row xl:gap-8">
                                     
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] text-center ">
+                                    <div class="col-span-2  w-[26vw] md:w-[22vw] lg:card bg-sky-400 rounded-lg lg:h-[230px] lg:w-[155px] p-[5px] text-center ">
                                         <img src="./my_paytm_asset_collection/InvestInStocksBull.png" alt="">
-                                        <h1 class="font-lg mt-4 text-white font-bold leading-4 mx-auto">Invest in <br> Stocks</h1>
+                                        <h1 class="text-[11px] leading-[13px] mt-2 lg:font-lg lg:mt-4 text-white font-bold lg:leading-4 mx-auto">Invest in <br> Stocks</h1>
                                     </div>
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] text-center ">
+
+                                    <div class="col-span-2  w-[26vw] md:w-[22vw] lg:card bg-sky-400 rounded-lg lg:h-[230px] lg:w-[155px] p-[5px] text-center ">
                                         <img src="./my_paytm_asset_collection/applyForIpo.png" alt="">
-                                        <h1 class="font-lg mt-4 text-white font-bold leading-4 mx-auto">Apply For IPO</h1>
+                                        <h1 class="text-[11px] leading-[13px] mt-2 lg:font-lg lg:mt-4 text-white font-bold lg:leading-4 mx-auto">Apply For IPO</h1>
                                     </div>
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] text-center ">
+
+                                    <div class="col-span-2  w-[26vw] md:w-[22vw] lg:card bg-sky-400 rounded-lg lg:h-[230px] lg:w-[155px] p-[5px] text-center ">
                                         <img src="./my_paytm_asset_collection/investInETFs.png" alt="">
-                                        <h1 class="font-lg mt-4 text-white font-bold leading-4 mx-auto">Invest in <br> ETFs</h1>
+                                        <h1 class="text-[11px] leading-[13px] mt-2 lg:font-lg lg:mt-4 text-white font-bold lg:leading-4 mx-auto">Invest in <br> ETFs</h1>
                                     </div>
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] text-center ">
+
+                                    <div class="col-span-3  w-[26vw] md:w-[22vw] place-self-end flex flex-col justify-between gap-1 mr-2 w-[26vw] lg:card bg-sky-400 rounded-lg lg:h-[230px] lg:w-[155px] p-[5px] text-center ">
                                         <img src="./my_paytm_asset_collection/buyGold.png" alt="">
-                                        <h1 class="font-lg mt-4 text-white font-bold leading-4 mx-auto">Buy Gold</h1>
+                                        <h1 class="text-[11px] leading-[13px] m-2 lg:font-lg lg:mt-4 text-white font-bold lg:leading-4 mx-auto">Buy Gold</h1>
                                     </div>
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] text-center ">
+
+                                    <div class="col-span-3  w-[26vw] md:w-[22vw] lg:card bg-sky-400 rounded-lg lg:h-[230px] lg:w-[155px] p-[5px] text-center ">
                                         <img src="./my_paytm_asset_collection/investInMutualFunds.png" alt="">
-                                        <h1 class="font-lg mt-4 text-white font-bold leading-4 mx-auto">Invest in <br> Mutual Funds</h1>
+                                        <h1 class="text-[11px] leading-[13px] mt-2 lg:font-lg lg:mt-4 text-white font-bold lg:leading-4 mx-auto">Invest in <br> Mutual Funds</h1>
                                     </div>
+                                    
                                 </div>
                             </div>
+                            
                             <!-- Paytm Travel Section 5-3-2 -->
-                            <div class="flex flex-row gap-8">
-
-                                <div class="flex flex-col justify-between w-[200px] h-[220px]">
+                            <div class="flex flex-col xl:flex xl:flex-row xl:gap-8 gap-y-8">
+                                
+                                <!-- Description -->
+                                <div class="flex flex-col justify-between 2xl:w-[200px] 2xl:h-[220px]">
+                                    
                                     <div>
-                                    <img class="w-36" src="./my_paytm_asset_collection/paytmTravel.png" alt="">
+                                        <img class="w-36" src="./my_paytm_asset_collection/paytmTravel.png" alt="">
                                     </div>
+                                    
                                     <div>
-                                    <p class="leading-5">
-                                        Best travel solutions with quick ticket bookings, great offers and easy refunds
-                                    </p>
-
+                                        <p class="leading-5">
+                                            Best travel solutions with quick ticket bookings, great offers and easy refunds
+                                        </p>
                                     <div class="pt-3 text-sky-500 font-semibold">Learn More</div>
                                 </div>
                                 </div> 
-
-                                <div class="flex flex-row gap-8">
+                                
+                                <!-- mini-cards section -->
+                                <div class="grid grid-cols-3 gap-y-8
+                                            xl:flex xl:flex-row xl:gap-8">
 
                                     <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
                                         <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelFlight.png" alt="">
@@ -1639,8 +1660,15 @@
                                         
                                     </div>
 
+                                    <div class="xl:hidden card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
+                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelTrain.png" alt="">
+                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Hassle Free Train Ticket Bookings</h1>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
