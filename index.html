@@ -1294,7 +1294,7 @@
                                             lg:gap-y-5
                                             2xl:gap-y-6
                                             flex flex-col 
-                                            3xl:gap-8 3xl:3xl:pl-8">
+                                            3xl:gap-8 3xl:pl-8">
 
                                     <!-- heading -->
                                     <h1 class=" text-[20px] font-bold leading-6
@@ -1418,48 +1418,127 @@
                         </div>
 
                         <!-- Business Tools by Paytm Section 5-2 -->
-                        <div class="hidden w-[1150px] h-max mx-auto flex flex-col gap-24">
+                        <div class="2xl:w-[1150px] h-max mx-auto flex flex-col gap-24">
 
-                            <h1 class="text-[44px] leading-[48px] font-bold">Business Tools to help <br> your business grow</h1>
+                            <h1 class="text-[20px] font-bold leading-6
+                                        md:text-[22px] md:leading-7 md:mx-0
+                                        lg:text-[26px] lg:max-w-[450px]
+                                        2xl:text-[38px] 2xl:max-w-[500px] 2xl:leading-tight 2xl:font-bold
+                                        2xl:text-[44px] 2xl:leading-[48px] 2xl:font-bold">
+                                    Business Tools to help your business grow
+                            </h1>
                             
-                            <div class="flex flex-row gap-20">
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-4 place-items-center
+                                        md:flex 2xl:flex-row 2xl:gap-20">
+                                
+                                <!-- toolsCard 1 --> 
+                                <div class="place-self-start flex flex-col gap-2
+                                            2xl:w-[240px]">
 
-                                <div class="w-[240px] flex flex-col gap-2">
-                                    <img class="max-w-[240px]" src="./my_paytm_asset_collection/Dashboard.png" alt="">
-                                    <h1 class="text-[26px] leading-[32px] font-bold py-6">POS Billing <br>
-                                        Software</h1>
-                                    <p class="text-[20px] leading-[28px] font-semibold leading-6 mb-1">Say Hello to Smart Retail Business Management</p>
-                                    <div class="flex flex-row font-bold space-x-4 w-[155px] items-center bg-transparent rounded-full text-black">
+                                    <!-- TC 1 image -->
+                                    <img class="max-w-[100%] self-center
+                                                2xl:max-w-[240px]"
+                                     src="./my_paytm_asset_collection/Dashboard.png" alt="">
+                                    
+                                     <!-- TC 1 heading -->
+                                    <h1 class="text-[15.2px] font-semibold 
+                                                2xl:text-[26px] 2xl:leading-[32px] 2xl:font-bold 2xl:py-6">
+                                        POS Billing <br class="hidden md:flex">
+                                        Software
+                                    </h1>
+                                    
+                                    <!--  TC 1 para --> 
+                                    <p class="text-[13.5px] font-normal 
+                                                2xl:text-[20px] 2xl:leading-[28px] 2xl:font-semibold 2xl:leading-6 2xl:mb-1">
+                                        Say Hello to Smart Retail Business Management
+                                    </p>
+                                    
+                                    <!-- TC 1 Learn more -->
+                                    <div class="text-[12px] font-bold 2xl:text-base
+                                                2xl:flex 2xl:flex-row 2xl:font-bold 2xl:space-x-4 2xl:w-[155px] 2xl:items-center 2xl:bg-transparent 2xl:rounded-full 2xl:text-black">
+                                        <p>Learn More ></p> 
+                                    </div>
+
+                                </div>
+                                
+                                <!-- toolsCard 2 -->
+                                <div class="2xl:w-[240px] flex flex-col gap-2">
+                                    
+                                    <!-- TC 2 image -->
+                                    <img class="max-w-[100%] self-center
+                                                2xl:max-w-[240px]"
+                                     src="./my_paytm_asset_collection/paytmforBusinessApp.png" alt="">
+                                    
+                                     <!-- TC 2 heading -->
+                                    <h1 class="text-[15.2px] font-semibold 
+                                                2xl:text-[26px] 2xl:leading-[32px] 2xl:font-bold 2xl:py-6">
+                                        Paytm for
+                                        <br class="hidden md:flex">Business App
+                                    </h1>
+                                    
+                                    <!-- TC 2 para -->
+                                    <p class="text-[13.5px] font-normal 
+                                                2xl:text-[20px] 2xl:leading-[28px] 2xl:font-semibold 2xl:leading-6 2xl:mb-1">
+                                        Everything you need to manage your business on your phone
+                                    </p>
+                                    
+                                    <!-- TC 2 LearnMore -->
+                                    <div class="text-[12px] font-bold 2xl:text-base
+                                                2xl:flex 2xl:flex-row 2xl:font-bold 2xl:space-x-4 2xl:w-[155px] 2xl:items-center 2xl:bg-transparent 2xl:rounded-full 2xl:text-black">
                                         <p>Learn More ></p> 
                                     </div>
                                 </div>
-
-                                <div class="w-[240px] flex flex-col gap-2">
-                                    <img class="max-w-[240px]" src="./my_paytm_asset_collection/paytmforBusinessApp.png" alt="">
-                                    <h1 class="text-[26px] leading-[32px] font-bold py-6">Paytm for
-                                        <br>Business App</h1>
-                                    <p class="text-[20px] leading-[28px] font-semibold leading-6 mb-1">Everything you need to manage your business on your phone</p>
-                                    <div class="flex flex-row font-bold space-x-4 w-[155px] items-center bg-transparent rounded-full text-black">
+                                
+                                <!-- toolsCard 3 -->
+                                <div class="
+                                            2xl:w-[240px] flex flex-col gap-2">
+                                    
+                                    <!-- TC 3 image -->                             
+                                    <img class="max-w-[100%] self-center
+                                                2xl:max-w-[240px]" src="./my_paytm_asset_collection/AdvertiseOnPaytm.png" alt=""
+                                    >
+                                    
+                                    <!-- TC 3 head -->
+                                    <h1 class="text-[15.2px] font-semibold 
+                                    2xl:text-[26px] 2xl:leading-[32px] 2xl:font-bold 2xl:py-6">
+                                    Advertise on
+                                    <br class="hidden md:flex">Paytm</h1>
+                                    
+                                    <!-- TC 3 para -->
+                                    <p class="text-[13.5px] font-normal 
+                                    2xl:text-[20px] 2xl:leading-[28px] 2xl:font-semibold 2xl:leading-6 2xl:mb-1">Grow your business by advertising on India’s largest mobile business</p>
+                                    
+                                    <!-- TC 4 LearnMore -->
+                                    <div class="text-[12px] font-bold 2xl:text-base
+                                    2xl:flex 2xl:flex-row 2xl:font-bold 2xl:space-x-4 2xl:w-[155px] 2xl:items-center 2xl:bg-transparent 2xl:rounded-full 2xl:text-black">
                                         <p>Learn More ></p> 
                                     </div>
                                 </div>
-
-                                <div class="w-[240px] flex flex-col gap-2">
-                                    <img class="max-w-[240px]" src="./my_paytm_asset_collection/AdvertiseOnPaytm.png" alt="">
-                                    <h1 class="text-[26px] leading-[32px] font-bold py-6">Advertise on
-                                    <br>Paytm</h1>
-                                    <p class="text-[20px] leading-[28px] font-semibold leading-6 mb-1">Grow your business by advertising on India’s largest mobile business</p>
-                                    <div class="flex flex-row font-bold space-x-4 w-[155px] items-center bg-transparent rounded-full text-black">
-                                        <p>Learn More ></p> 
-                                    </div>
-                                </div>
-
-                                <div class="w-[240px] flex flex-col gap-2">
-                                    <img class="max-w-[240px]" src="./my_paytm_asset_collection/BussinessKhata.png" alt="">
-                                    <h1 class="text-[26px] leading-[32px] font-bold py-6">Business
-                                        <br>Khata</h1>
-                                    <p class="text-[20px] leading-[28px] font-semibold leading-6 mb-1">Managing Khata made easy</p>
-                                    <div class="flex flex-row font-bold space-x-4 w-[155px] items-center bg-transparent rounded-full text-black">
+                                
+                                <!-- toolsCard 4 -->
+                                <div class="place-self-start flex flex-col gap-2
+                                            2xl:w-[240px]">
+                                    
+                                    <!-- TC 4 image -->
+                                    <img class="max-w-[100%] self-center
+                                                2xl:max-w-[240px]" 
+                                    src="./my_paytm_asset_collection/BussinessKhata.png" alt=""
+                                    >
+                                    
+                                    <!-- TC 4 heading -->
+                                    <h1 class="text-[15.2px] font-semibold 
+                                    2xl:text-[26px] 2xl:leading-[32px] 2xl:font-bold 2xl:py-6">
+                                        Business
+                                        <br class="hidden md:flex">Khata
+                                    </h1>
+                                    
+                                    <!-- TC 4 para -->
+                                    <p class="text-[13.5px] font-normal 
+                                                2xl:text-[20px] 2xl:leading-[28px] 2xl:font-semibold 2xl:leading-6 2xl:mb-1">Managing Khata made easy</p>
+                                    
+                                    <!-- TC 4 LearnMore -->
+                                    <div class="text-[12px] font-bold 2xl:text-base
+                                                2xl:flex 2xl:flex-row 2xl:font-bold 2xl:space-x-4 2xl:w-[155px] 2xl:items-center 2xl:bg-transparent 2xl:rounded-full 2xl:text-black">
                                         <p>Learn More ></p> 
                                     </div>
                                 </div>
