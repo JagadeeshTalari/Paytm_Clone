@@ -21,13 +21,15 @@
             'md': '768px',
             // => @media (min-width: 768px) { ... }
 
+            'xmd': '875px',
+
             'lg': '1024px',
             // => @media (min-width: 1024px) { ... }
 
             'xl': '1250px',
             // => @media (min-width: 1280px) { ... }
 
-            '2xl': '1536px',
+            '2xl': '1440px',
             // => @media (min-width: 1536px) { ... }
             '3xl': '1700px'
             }
@@ -518,64 +520,90 @@
                 </div>
             </div> 
 
+            <!-- // -->
+            <!-- // -->
             <!--  Paytm Payments Instruments Section-3-->
-            <div class="PaytmPayments section-3 my-12 gap-6 flex flex-col justify-around 2xl:gap-12 mx-auto 2xl:my-24 lg:w-[1170px]">   
+            <div class="PaytmPayments section-3 my-12 gap-6 flex flex-col justify-around bg-[#f5f7fa]
+                        2xl:gap-12 mx-auto 2xl:my-24 2xl:w-[1170px]">   
 
                 <div>
                     <h1 class="w-[90vw] mx-auto text-[20px] font-bold
-                                lg:text-[42px]">
+                                lg:text-[42px] lg:w-[85vw]
+                                xl:w-[80vw]
+                                2xl:text-[55px]">
                                 Paytm Payments Instruments.
                     </h1>
                 </div>
 
                 <!-- Card-1 -->
-                <div class="w-[90vw] py-12 px-6 mx-auto gap-2 flex flex-col-reverse rounded-xl bg-white
-                            lg:p-24 lg:pr-12 lg:h-[620px] lg:w-[1170px] lg:flex-row ">
+                <div class="w-[90vw] py-12 px-6 mx-auto gap-y-12 flex flex-col-reverse rounded-xl bg-white
+                            xmd:flex-row xmd:gap-2
+                            lg:py-14 lg:px-12 lg:mx-auto lg:w-[85vw]
+                            xl:w-[80vw]
+                            2xl:p-24 2xl:pr-12 2xl:h-[620px] 2xl:w-[1170px] 2xl: ">
 
-                    <div class="gap-y-4 flex flex-col mx-auto justify-around">
+                    <!-- card1 - content --> 
+                    <div class="gap-y-4 flex flex-col mx-auto justify-around
+                    md:mx-6
+                    xmd:justify-center xmd:gap-y-3
+                    lg:gap-y-5
+                    2xl:gap-y-6">
 
                         <!-- card1 - main title div -->
-                        <div class="flex flex-row items-center gap-4">
+                        <div class="flex flex-row items-center gap-4
+                        md:items-left md:mx-0
+                        2xl:mb-4">
 
                             <!-- card1 - icon -->
                             <img class="w-12
-                                        2xl:w-20" 
+                                        md:w-14
+                                        lg:w-16
+                                        2xl:w-[82px]" 
                                         src="./my_paytm_asset_collection/paytmWallet.png" alt="">
 
                             <!-- card1 - title -->
-                            <p class="text-sm font-bold">Paytm <br class="hidden 2xl:flex"> Wallet</p>
+                            <p class="text-sm font-bold
+                                      md:text-base 
+                                      lg:text-sm lg:leading-4
+                                      2xl:text-[17px] 2xl:leading-[1.3rem]">
+                                      Paytm <br class="hidden lg:flex"> Wallet
+                            </p>
 
                         </div>
 
                         <!-- card1 - heading -->
                         <h1 class=" text-[20px] font-bold leading-6
-                                    2xl:text-[40px] 2xl:leading-tight 2xl:font-bold
+                                    md:text-[22px] md:leading-7 md:mx-0
+                                    lg:text-[26px] lg:max-w-[400px]
+                                    2xl:text-[39px] 2xl:max-w-[410px] 2xl:leading-tight 2xl:font-bold
                                     ">
-                             The Fastest Way to <br> Pay In-store & Online.
+                             The Fastest Way to <br class="sm:hidden "> Pay In-store & Online.
                         </h1>
 
                         <!-- card1 - para -->
                         <p class="text-xs
-                                  2xl:text-lg 2xl:font-semibold          ">
+                                  md:text-[13px] md:max-w-lg md:mx-0
+                                  lg:text-[15px] lg:leading-5 lg:max-w-[440px]
+                                  2xl:text-[17.5px] 2xl:leading-6 2xl:max-w-[450px] 2xl:font-semibold">
                                     Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.
                         </p>
 
                         <!-- download button -->
-                        <div class="mx-auto">
+                        <div class="mx-auto
+                                    xmd:mx-0 xmd:w-[160px]
+                                    md:w-[170px]
+                                    lg:w-[220px]
+                                    xl:w-[240px]
+                                    ">
 
                             <div class="button-wrapper px-6 py-1.5 text-[9px] gap-x-1.5 font-semibold flex flex-row items-center bg-black rounded-full text-white
+                                        lg:px-7 lg:py-2.5 lg:text-[12px] lg:gap-x-3
+                                        2xl:py-3 2xl:px-2 2xl:gap-x-3.5 2xl:text-[15px] 2xl:align-text-top 2xl:justify-center
                         
-                            2xl:w-[255px] 2xl:py-3 2xl:px-6 2xl:space-x-4 
-                        
-                            hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black">
+                                        hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black">
 
                             <p>Download the App</p>
 
-                            <!-- w-2 fill-white hover:fill-black
-                                        sm:w-2.5
-                                        lg:w-3.5
-                                        xl:w-4"  -->
-                            
                             <svg class="w-2 fill-white hover:fill-black
                                         sm:w-2.5
                                         lg:w-3.5
@@ -597,60 +625,186 @@
                         
                     </div>
 
-                    <div>
+                    <!-- card1 - Image -->
+                    <div class="max-w-[350px] mx-auto
+                                md:max-w-sm
+                                lg:max-w-md
+                                xl:max-w-[470px]
+                                2xl:max-w-[520px]">
                         <img src="./my_paytm_asset_collection/paytmWalletBalance.png" alt="">
                     </div>
 
                 </div>
                 <!-- Card-2 -->
-                <div class="hidden bg-white rounded-xl h-[620px] w-[1170px] mx-auto flex flex-row gap-2 p-12 pl-24">
+                <div class="w-[90vw] py-12 px-6 mx-auto gap-y-16 flex flex-col-reverse rounded-xl bg-white
+                xmd:flex-row xmd:gap-2
+                lg:py-14 lg:px-12 lg:mx-auto lg:w-[85vw]
+                xl:w-[80vw]
+                2xl:p-24 2xl:pr-12 2xl:h-[620px] 2xl:w-[1170px] 2xl: ">
 
-                    <div class="flex flex-col mx-auto justify-around w-[830px]">
+                    <!-- card2 - contetn -->
+                    <div class="gap-y-4 flex flex-col mx-auto justify-around
+                                md:mx-6
+                                xmd:justify-center xmd:gap-y-3
+                                lg:gap-y-5
+                                2xl:gap-y-6">
 
-                        <div class="flex flex-row items-center gap-4">
-                            <img class="w-20" src="./my_paytm_asset_collection/upiMoneyTransfer.png" alt="">
-                            <p class="text-sm font-bold">UPI Money <br> Transfer</p>
+                        <!-- card2 - main title div -->
+                        <div class="flex flex-row items-center gap-4
+                                    md:items-left md:mx-0
+                                    2xl:mb-4">
+
+                            <!-- card1 - icon -->
+                            <img class="w-12
+                                        md:w-14
+                                        lg:w-16
+                                        2xl:w-[82px]" 
+                                        src="./my_paytm_asset_collection/upiMoneyTransfer.png" alt="">
+
+                            <!-- card1 - title -->
+                            <p class="text-sm font-bold
+                                        md:text-base 
+                                        lg:text-sm lg:leading-4
+                                        2xl:text-[17px] 2xl:leading-[1.3rem]">
+                                        UPI Money <br class="hidden lg:flex"> Transfer
+                            </p>
+
                         </div>
+                        
+                        <!-- card2 - heading -->
+                        <h1 class=" text-[20px] font-bold leading-6
+                                    md:text-[22px] md:leading-7 md:mx-0
+                                    lg:text-[26px] lg:max-w-[400px]
+                                    2xl:text-[39px] 2xl:max-w-[410px] 2xl:leading-tight 2xl:font-bold
+                                    ">
+                             Pay anyone directly <br class="hidden lg:flex"> from your bank <br class="hidden lg:flex"> account. 
+                        </h1>
 
-                        <h1 class="text-[40px] leading-tight font-bold"> Pay anyone directly <br> from your bank <br> account. </h1>
+                        <!-- card2 - para -->
+                        <p class="text-xs
+                                    md:text-[13px] md:max-w-lg md:mx-0
+                                    lg:text-[15px] lg:leading-5 lg:max-w-[440px]
+                                    2xl:text-[17.5px] 2xl:leading-6 2xl:max-w-[450px] 2xl:font-semibold">
+                                    Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                        </p>
 
-                        <p class="text-lg font-semibold">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+                        <!-- download button -->
+                        <div class="mx-auto
+                                    xmd:mx-0 xmd:w-[160px]
+                                    md:w-[170px]
+                                    lg:w-[220px]
+                                    xl:w-[240px]
+                                    ">
 
-                        <div class="flex flex-row font-semibold space-x-4 w-[255px] items-center bg-black rounded-full text-white py-3 px-6 hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black">
-                            <p>Download the App</p>
-                            <svg class="fill-white hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white"></path></svg>
-                            <svg class="fill-white hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white"></path></svg>
+                            <div class="button-wrapper px-6 py-1.5 text-[9px] gap-x-1.5 font-semibold flex flex-row items-center bg-black rounded-full text-white
+                            lg:px-7 lg:py-2.5 lg:text-[12px] lg:gap-x-3
+                            2xl:py-3 2xl:px-2 2xl:gap-x-3.5 2xl:text-[15px] 2xl:align-text-top 2xl:justify-center
+            
+                            hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black">
+
+                                <p>Download the App</p>
+
+                                <svg class="w-2 fill-white hover:fill-black
+                                            sm:w-2.5
+                                            lg:w-3.5
+                                            xl:w-4" 
+                                 width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white"></path>
+                                </svg>
+
+                                <svg class="w-2 fill-white hover:fill-black
+                                            sm:w-2.5
+                                            lg:w-3.5
+                                            xl:w-4" 
+                                 width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white"></path>
+                                </svg>
+
+                            </div>
                         </div>
                         
                     </div>
 
-                    <div class="flex self-center">
+                    <!-- card2 - Image -->
+                    <div class="max-w-[350px] mx-auto
+                                md:max-w-sm
+                                lg:max-w-md
+                                xl:max-w-[470px]
+                                2xl:max-w-[520px]">
                         <img src="./my_paytm_asset_collection/upiMoneyTransferImg_250paidSuccessfully.png" alt="">
                     </div>
 
                 </div>
                 <!-- Card-3 -->
-                <div class="hidden bg-white rounded-xl h-[620px] w-[1170px] mx-auto flex flex-row gap-32 p-24 pr-16">
+                <div class="w-[90vw] py-12 px-6 mx-auto gap-y-16 flex flex-col-reverse rounded-xl bg-white
+                            xmd:flex-row xmd:gap-2
+                            lg:py-14 lg:px-12 lg:mx-auto lg:w-[85vw]
+                            xl:w-[80vw]
+                            2xl:p-24 2xl:pr-12 2xl:h-[620px] 2xl:w-[1170px] ">
 
-                    <div class="flex flex-col mx-auto justify-around w-[650px]">
+                    
+                    <!-- card3 - content --> 
+                    <div class="gap-y-4 flex flex-col mx-auto justify-around
+                                md:mx-6
+                                xmd:justify-center xmd:gap-y-3
+                                lg:gap-y-5
+                                2xl:gap-y-6">
 
-                        <div class="flex flex-row items-center gap-4">
-                            <img class="w-40" src="./my_paytm_asset_collection/paytmPostpaid.png" alt="">
+                        <!-- card3 - main title div -->
+                        <div class="flex flex-row items-center gap-4
+                                    md:items-left md:mx-0
+                                    2xl:mb-4">
+
+                            <!-- card3 - icon & title -->        
+                            <img class="w-24
+                                        md:w-32
+                                        lg:w-36
+                                        2xl:w-44" src="./my_paytm_asset_collection/paytmPostpaid.png" alt="">
                             
                         </div>
-                        <h1 class="text-[40px] leading-tight font-bold"> Want it? <br>
-                            No more waiting for it.  </h1>
 
-                        <p class="text-lg font-semibold">With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
+                        <!-- card3 - heading -->
+                        <h1 class=" text-[20px] font-bold leading-6
+                        md:text-[22px] md:leading-7 md:mx-0
+                        lg:text-[26px] lg:max-w-[400px]
+                        2xl:text-[38px] 2xl:max-w-[420px] 2xl:leading-tight 2xl:font-bold
+                        ">
+                             Want it? <br class="sm:hidden lg:flex">
+                                No more waiting for it.  
+                        </h1>
 
-                        <div class="flex flex-row font-semibold space-x-4 w-[155px] items-center bg-[#002970] rounded-full text-white py-3 px-6 hover:bg-transparent hover:outline hover:outline-1 hover:outline-black hover:text-black hover:fill-[#000] hover:stroke-1 hover:stroke-black">
-                            <p>Learn More ></p>
+                        <!-- card3 - para -->
+                        <p class="text-xs
+                                    md:text-[13px] md:max-w-lg md:mx-0
+                                    lg:text-[15px] lg:leading-5 lg:max-w-[440px]
+                                    2xl:text-[17.5px] 2xl:leading-6 2xl:max-w-[450px] 2xl:font-semibold">
+                            With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.
+                        </p>
+
+                        <!-- learn button -->
+                        <div class=" mx-auto
+                                    xmd:mx-0 rounded-full
+                                    xmd:w-[100px]
+                                    lg:w-[150px]
+                                    2xl:w-[170px]
+                                    ">
+                            
+                            <div class="text-[10px] py-2 px-4 font-semibold rounded-full bg-[#002970] text-white
+                                        xmd:py-2.5 xmd:px-4.5
+                                        lg:text-[15.5px] lg:py-2.5 lg:px-6
+                                        2xl:text-[17.5px] 2xl:py-3 2xl:px-7
+                                        hover:bg-sky-500/80">
+                                Learn More >
+                            </div>
                             
                         </div>
                         
                     </div>
 
-                    <div class="flex justify-center items-center self-center">
+                    <!-- card3 - Image -->
+                    <div class="w-fit mx-auto
+                                md:max-w-sm
+                                lg:max-w-md
+                                xl:max-w-[420px]
+                                2xl:mr-0">
                         <img class="w-[600px] h-[500px]"src="./my_paytm_asset_collection/paytmPostpaidImg_shoppingBag.png" alt="">
                     </div>
 
@@ -719,6 +873,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Financial Services by Paytm Section-4-2 -->
             <div class="hidden bg-cover bg-no-repeat bg-[url('./my_paytm_asset_collection/paytmMoneyBgImage.png')] w-screen h-[640px]  flex">
                 
@@ -749,6 +904,7 @@
                 </div>
 
             </div>
+
             <!-- Financial Services by Paytm Section-4-3 -->
             <div class="hidden bg-white w-screen h-[600px] mx-auto flex flex-col justify-center">
 
@@ -777,6 +933,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- Financial Services by Paytm Section-4-4 -->
             <div class="hidden w-screen h-[640px]  flex">
                 
