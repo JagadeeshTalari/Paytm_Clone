@@ -43,7 +43,8 @@
 
 <body class="bg-[#F6F6F6] flex flex-col overflow-x-hidden">
 
-   <nav class="w-screen bg-white drop-shadow-sm px-3 fixed z-10 flex flex-row justify-between items-center
+    <!-- navbar section -->
+   <nav class="w-screen bg-cyan-50 md:bg-white drop-shadow-sm px-3 py-1 fixed z-10 flex flex-row justify-between items-center
                 sm:py-1.5
                 md:py-2.5 md:drop-shadow md:relative
                 lg:py-3 
@@ -51,13 +52,13 @@
                 2xl:px-[4.75rem] 2xl:py-[18px] 2xl:shadow-xl 2xl:shadow-gray-200/20">
 
         <!-- Nav-bar hamburger icon -->
-        <div class="text-[15px] sm:hidden">
+        <div class="text-[17px] sm:hidden">
             <i class="fa-solid fa-bars"></i>
         </div>
 
         <!-- Nav-bar logo -->
         <div>
-            <img class="w-32 md:w-36 lg:w-40 xl:w-44 2xl:w-44" src="./my_paytm_asset_collection/paytm_logo.png" alt="">
+            <img class="w-36 md:w-36 lg:w-40 xl:w-44 2xl:w-44" src="./my_paytm_asset_collection/paytm_logo.png" alt="">
         </div>
 
         <!-- Nav-bar list items -->
@@ -118,14 +119,14 @@
         </div>
 
         <!-- Nav-bar signIn button -->
-        <div class="flex flex-row justify-end items-center font-semibold gap-x-0.5 w-[2.5rem] py-px bg-sky-400 hover:bg-blue-900 rounded-full text-white   
-                    sm:w-[3rem] py-0.5  gap-x-1
+        <div class="flex flex-row justify-end items-center font-semibold w-[3.1rem] bg-sky-400 hover:bg-blue-900 rounded-full text-white   
+                    sm:w-[3.5rem] py-0.5  gap-x-0
                     md:w-[4rem] gap-x-1.5 
                     lg:w-[5rem] gap-x-2 py-[1.5px]
                     xl:w-[100px] py-[1.75px]
                     2xl:w-[7rem] 2xl:font-bold ">
 
-            <p class="  text-[6px] 
+            <p class="  text-[7px] 
                         sm:text-[8px]
                         md:text-[0.6rem]
                         lg:text-[0.8rem]
@@ -136,13 +137,14 @@
 
             </p>  
             
-            <img class="w-[10px] sm:w-[13px] md:w-[17px] lg:w-[21px] xl:w-[32px] 2xl:w-[35px]"src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg" alt="">
+            <img class="w-[14px] sm:w-[13px] md:w-[17px] lg:w-[21px] xl:w-[32px] 2xl:w-[35px]"src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg" alt="">
 
         </div>
         
         
    </nav>
 
+   <!-- total content section -->
     <div class="content-section-wrapper mt-8 sm:mt-11 md:-mt-1">
 
         <section id="kyc">
@@ -168,7 +170,9 @@
 
         </section>
 
+        <!-- content -->
         <section id="content">
+
             <!-- Main Content - India's Most Loved Payment's App Section-1 -->
             <div class="bg-white">
                 <div class="w-screen px-8 py-10  flex flex-col-reverse justify-between gap-12 bg-white
@@ -251,13 +255,13 @@
 
                     </div>
                     <!-- right section -->
-                    <div class="w-[12rem] mx-auto flex flex-row justify-end
+                    <div class="w-[14rem] mx-auto flex flex-row justify-end
                     sm:w-[16rem]
                     md:w-[22rem] md:mx-0
                     lg:w-[26rem]
                     xl:w-[30rem]
                     2xl:w-[33rem]">
-                        <img class="w-[12rem] sm:w-[16rem] md:w-[22rem] lg:w-[26rem] xl:w-[30rem] 2xl:w-[33rem]" src="./my_paytm_asset_collection/mobilepics.png" alt="">
+                        <img class="w-[14rem] sm:w-[16rem] md:w-[22rem] lg:w-[26rem] xl:w-[30rem] 2xl:w-[33rem]" src="./my_paytm_asset_collection/mobilepics.png" alt="">
                     </div>
 
                 </div>
@@ -266,24 +270,31 @@
 
             <!-- <div class="bills-section-wrapper bg-[#00BAF2] w-screen py-10"> -->
 
-            <div class="hidden bills bg-[#00BAF2] w-screen flex flex-col justify-start py-10 px-6 
+            <div class="bills bg-[#00BAF2] w-screen flex flex-col justify-start py-10 
                             lg:h-[380px]">
 
-                    <div class="rechargeBills flex flex-col justify-start gap-7 relative container mx-auto text-white
-                    
-                     lg:w-[1250px]   lg:max-w-max   lg:gap-5">
+                    <div class="rechargeBills w-[90vw] gap-7 mx-auto flex flex-col text-white
+                                lg:w-[1250px] lg:gap-5">
 
-                        <div><h1 class="font-bold text-[18px] lg:text-[37px]">Recharge & Pay Bills on Paytm.</h1></div>
+                     
+                        <!-- heading -->
+                        <div>
+
+                            <h1 class="font-bold text-[18px] lg:text-[37px]">
+                                Recharge & Pay Bills on Paytm.
+                            </h1>
+
+                        </div>
 
                         <!-- Bill-section mini-cards -->
 
-                        <div class="container mx-auto grid grid-cols-4 gap-4 gap-y-6 space-x-3      
+                        <div class="grid grid-cols-4 gap-4 gap-y-3 gap-x-3      
                                     font-semibold font-[6px]
                                     lg:flex-row lg:gap-9">
 
                             <!-- Bill-card 1 -->
-                            <div class="gap-2 py-3 px-4 flex flex-col justify-center items-center 
-                            hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                            <div class="gap-2 py-3 px-4 flex flex-col justify-center items-center  hover:bg-cyan-600/30
+                            lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
                             ">
 
                                 <img class="w-10
@@ -358,7 +369,7 @@
                             </div>
                             
                             <!-- Bill-card 5 -->
-                            <div class="py-3 px-4 hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                            <div class="py-3 px-2 hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
                             flex flex-col justify-center items-center gap-2">
 
                                 <img class="lg:w-16 lg:mb-4 w-10"
@@ -375,7 +386,7 @@
                             </div>
                             
                             <!-- Bill-card 6 -->
-                            <div class="py-3 px-4 hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
+                            <div class="py-3 px-1 hover:bg-cyan-600/30 lg:justify-evenly content-start lg:pl-4 lg:py-4 lg:h-[185px] lg:w-[190px] rounded-xl
                             flex flex-col justify-center items-center gap-2">
 
                                 <img class="lg:w-16 lg:mb-4 w-10"
@@ -416,14 +427,15 @@
         
             <!-- </div> -->
             <!-- Bill Section - 2-2 -->
-            <div class="hidden bills bg-[#0f4a8a] w-screen h-[380px] flex flex-col justify-start py-10 px-6 ">
+            <div class="bills bg-[#0f4a8a] w-screen h-[380px] flex flex-col justify-start py-10">
 
-                <div class="rechargeBills  lg:w-[1250px] text-white h-auto flex flex-col gap-7 lg:gap-5">
+                <div class="rechargeBills w-[90vw] gap-7 mx-auto flex flex-col text-white 
+                            lg:w-[1250px] lg:gap-5">
 
                     <div><h1 class="text-[18px] lg:text-[37px] font-bold">Book & Buy on Paytm.</h1></div>
 
                     <div class="lg:flex lg:flex-row lg:gap-9
-                    grid grid-cols-4 gap-4 gap-y-6 space-x-3 font-semibold">
+                                grid grid-cols-4 gap-4 gap-y-8 gap-x-3 font-semibold">
 
                         <div class="hover:bg-[#002970]/40 lg:justify-evenly lg:content-start lg:pl-4 lg:py-4 lg:h-[172px] lg:w-[200px] rounded-xl
                         flex flex-col justify-center items-center gap-2 text-center">
@@ -1547,7 +1559,7 @@
                         </div>
 
                         <!-- Paytm Money & Travel Cards Section 5-3 -->
-                        <div class="flex flex-col overflow-hidden mx-auto md:gap-24
+                        <div class="flex flex-col overflow-hidden mx-auto gap-24 md:gap-24
                                     2xl:w-[1150px] 2xl:mx-auto 2xl:h-max 2xl:gap-36 2xl:my-12 ">
                            
                             <!-- Paytm  Money Section 5-3-1-->
@@ -1559,16 +1571,16 @@
                                     
                                     <!-- icon - paytm money -->
                                     <div>
-                                        <img class="w-36" src="./my_paytm_asset_collection/PaytmMoney.png" alt="">
+                                        <img class="w-28 md:w-36" src="./my_paytm_asset_collection/PaytmMoney.png" alt="">
                                     </div>
                                     
                                     <!-- Description content -->
                                     <div class="flex flex-col justify-between">
-                                        <p class="leading-5">
+                                        <p class="text-sm md:text-base leading-5">
                                             Get started on wealth creation journey with Zero brokerage fee & no hidden charges.
                                         </p>
 
-                                        <div class="self-end md:self-start pt-3 text-sky-500 font-semibold">Learn More</div>
+                                        <div class="text-sm md:text-base self-end md:self-start pt-3 text-sky-500 font-semibold">Learn More</div>
                                     </div>
 
                                 </div> 
@@ -1609,64 +1621,78 @@
                             <div class="flex flex-col xl:flex xl:flex-row xl:gap-8 gap-y-8">
                                 
                                 <!-- Description -->
-                                <div class="flex flex-col justify-between 2xl:w-[200px] 2xl:h-[220px]">
+                                <div class="flex flex-col gap-y-4 justify-between 2xl:w-[200px] 2xl:h-[220px]">
                                     
                                     <div>
-                                        <img class="w-36" src="./my_paytm_asset_collection/paytmTravel.png" alt="">
+                                        <img class="w-28 md:w-36" src="./my_paytm_asset_collection/paytmTravel.png" alt="">
                                     </div>
                                     
-                                    <div>
-                                        <p class="leading-5">
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-sm md:text-base leading-5">
                                             Best travel solutions with quick ticket bookings, great offers and easy refunds
                                         </p>
-                                    <div class="pt-3 text-sky-500 font-semibold">Learn More</div>
-                                </div>
-                                </div> 
+                                        <div class="text-sm md:text-base self-end md:self-start pt-3 text-sky-500 font-semibold">Learn More</div>
+                                        </div>
+
+                                    </div> 
                                 
                                 <!-- mini-cards section -->
-                                <div class="grid grid-cols-3 gap-y-8
+                                <div class="grid grid-cols-3 gap-y-8 gap-x-2
                                             xl:flex xl:flex-row xl:gap-8">
 
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelFlight.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Flat 14% <br> cashback</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] card bg-sky-400 rounded-lg sm:h-[230px] sm:w-[155px] sm:p-[5px] flex flex-col items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-4 sm:mt-0 self-center">
+                                        <img class="w-[55px]  sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelFlight.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">Flat 14% <br> cashback</h1>
                                         <p class="ml-2 mt-2 text-xs font-bold">With Code</p>
                                         <p class="ml-2 mt-2 text-xs font-bold">WELCOMEFLIGHT</p>
                                     </div>
 
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelRefund.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">100% Refund</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] card bg-sky-400 rounded-lg sm:h-[230px] sm:w-[155px] sm:p-[5px] flex flex-col items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-4 sm:mt-0 self-center">
+                                        <img class="w-[55px]  sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelRefund.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">100% Refund</h1>
                                         <p class="ml-2 mt-2 text-xs font-bold">With Paytm's</p>
                                         <p class="ml-2 mt-2 text-xs font-bold">Cancellation Protect</p>
                                     </div>
 
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelCashback.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Flat 10% <br> cashback</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] card bg-sky-400 rounded-lg sm:h-[230px] sm:w-[155px] sm:p-[5px] flex flex-col items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-4 sm:mt-0 self-center">
+                                        <img class="w-[50px] sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelCashback.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">Flat 10% <br> cashback</h1>
                                         <p class="ml-2 mt-2 text-xs font-bold">With Code HAPPYBUS</p>
                                         <p class="ml-2 mt-2 text-xs font-bold"></p>
                                     </div>
 
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelSanitizedBus.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Sanitised Bus Options With TravelSafe+</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] card bg-sky-400 rounded-lg sm:h-[230px] sm:w-[155px] sm:p-[5px] flex flex-col justify-center items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-0 sm:mt-0 self-center">
+                                        <img class="w-[55px] sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelSanitizedBus.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">Sanitised Bus Options With TravelSafe+</h1>
                                         
                                     </div>
 
-                                    <div class="card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelTrain.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Hassle Free Train Ticket Bookings</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] card bg-sky-400 rounded-lg sm:h-[230px] sm:w-[155px] sm:p-[5px] flex flex-col justify-center items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-0 sm:mt-0 self-center">
+                                        <img class="w-[55px] sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelTrain.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">Hassle Free Train Ticket Bookings</h1>
                                         
                                     </div>
 
-                                    <div class="xl:hidden card bg-sky-400 rounded-lg h-[230px] w-[155px] p-[5px] flex flex-col items-start text-white">
-                                        <img class="w-[70px] ml-2 mt-7" src="./my_paytm_asset_collection/paytmTravelTrain.png" alt="">
-                                        <h1 class="text-lg mt-4 ml-2  font-bold leading-5 ">Hassle Free Train Ticket Bookings</h1>
+                                    <div class="w-[28.5vw] h-[180px] sm:w-[22vw] xl:hidden card bg-sky-400  rounded-lg sm:h-[230px] sm:w-[155px] p-[5px] flex flex-col justify-center items-start text-white">
+                                        <div class="h-[30%] sm:h-auto mt-0 sm:mt-0 self-center">
+                                        <img class="w-[55px] sm:w-[70px] sm:ml-2 sm:mt-7" src="./my_paytm_asset_collection/paytmTravelTrain.png" alt="">
+                                        </div>
+                                        <h1 class="text-[11px] leading-[12.9px] sm:text-lg mt-4 ml-2  font-bold leading-5 ">Hassle Free Train Ticket Bookings</h1>
                                         
                                     </div>
 
                                 </div>
+
                             </div>
 
                         </div>
